@@ -22,7 +22,7 @@
         ?>
         <div class="hideLogin"><p class="loginHeadline">If you´re not a member then <a href="#" class="showRegister">register here</a></p></div>
         <div class="hideRegister"><p class="registerHeadline">Sign up or go back to <a href="#" class="showLogin">log in</a></p></div>
-        <form method="post" action="auth/login">
+        <form method="post" action="start/login">
             <div id="login">
                 <input name="email" class="loginInput" type="email" placeholder="Email"/>
                 <input name="password" class="loginInput" type="password" placeholder="Password"/>
@@ -30,7 +30,7 @@
             </div>
         </form>
 
-        <form method="post" action="auth/register">
+        <form method="post" action="start/register">
             <div id="register">
                 <input name="first_name" class="inputs" type="text" placeholder="First name">
                 <input name="last_name" class="inputs" type="text" placeholder="Last name">

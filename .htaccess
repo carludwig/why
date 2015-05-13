@@ -1,0 +1,14 @@
+#default directory index
+DirectoryIndex Router.php
+
+#no indexes are allowed for the directory
+Options -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#rewrite all URLs to index.php
+RewriteEngine On
+RewriteRule ^(.*)$ router.php [PT,L]
+
